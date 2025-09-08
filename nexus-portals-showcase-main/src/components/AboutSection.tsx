@@ -100,13 +100,16 @@ const AboutSection = () => {
   }, []);
 
   const skills = [
-    { icon: Globe, name: 'HTML5', color: 'text-orange-400' },
-    { icon: Palette, name: 'CSS3', color: 'text-blue-400' },
-    { icon: Code, name: 'JavaScript', color: 'text-yellow-400' },
-    { icon: Lightning, name: 'React', color: 'text-cyan-400' },
-    { icon: Rocket, name: 'GSAP', color: 'text-green-400' },
-    { icon: Cpu, name: 'Node.js', color: 'text-green-500' },
-    
+    { icon: Globe, name: 'HTML5', color: 'text-orange-400', url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5' },
+    { icon: Palette, name: 'CSS3', color: 'text-blue-400', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { icon: Code, name: 'JavaScript', color: 'text-yellow-400', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    { icon: Code, name: 'TypeScript', color: 'text-blue-500', url: 'https://www.typescriptlang.org/docs/' },
+    { icon: Lightning, name: 'React', color: 'text-cyan-400', url: 'https://react.dev/learn' },
+    { icon: Leaf, name: 'Tailwind CSS', color: 'text-emerald-400', url: 'https://tailwindcss.com/' },
+    { icon: Rocket, name: 'GSAP', color: 'text-green-400', url: 'https://gsap.com/docs/v3/' },
+    { icon: Cpu, name: 'Node.js', color: 'text-green-500', url: 'https://nodejs.org/docs/latest/api/' },
+    { icon: Globe, name: 'Vite', color: 'text-purple-400', url: 'https://vite.dev/' },
+    { icon: Globe, name: 'Git', color: 'text-rose-400', url: 'https://git-scm.com/doc' }
   ];
 
   return (
@@ -170,18 +173,21 @@ const AboutSection = () => {
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
                 {skills.map((skill, index) => (
-                  <div 
+                  <a
                     key={skill.name}
+                    href={skill.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="skill-icon glass-card p-4 text-center group hover:scale-110 transition-all duration-300 cursor-pointer"
                   >
-                    <skill.icon 
-                      size={32} 
+                    <skill.icon
+                      size={32}
                       className={`mx-auto mb-2 ${skill.color} group-hover:scale-125 transition-transform duration-300`}
                     />
                     <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                       {skill.name}
                     </span>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

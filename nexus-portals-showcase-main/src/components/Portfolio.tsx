@@ -4,9 +4,9 @@ import Navigation from './Navigation';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import ProjectsSection from './ProjectsSection';
+import CareerTimeline from './CareerTimeline';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
-
 const Portfolio = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -39,6 +39,7 @@ const Portfolio = () => {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
+          <CareerTimeline />
           <ContactSection />
         </main>
         <Footer />
