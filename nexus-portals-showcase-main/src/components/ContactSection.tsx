@@ -160,7 +160,7 @@ const ContactSection = () => {
           className="w-full h-full"
         />
       </div>
-
+     
       {/* Mobile background - subtle overlay */}
       <div className="absolute inset-0 lg:hidden">
         <iframe 
@@ -168,12 +168,12 @@ const ContactSection = () => {
           frameBorder='0' 
           width='100%' 
           height='100%'
-          className="w-full h-full opacity-30"
+          className="w-full h-full brightness-125 contrast-125 saturate-150"
         />
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/60 lg:bg-gradient-to-r lg:from-background/80 lg:via-background/60 lg:to-transparent backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-background/20 lg:bg-gradient-to-r lg:from-background/40 lg:via-background/20 lg:to-transparent backdrop-blur-[1px]"></div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:max-w-4xl">
