@@ -79,7 +79,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-light tracking-wider mb-4">
-              <span className="text-gradient">KHUSHVEE</span>
+              <span className="text-gradient">KHUSHVEER</span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology.
@@ -114,7 +114,7 @@ const Footer = () => {
               <p>khushveersingh645@gmail.com</p>
               <p>Available for freelance work</p>
               <p className="text-sm">
-                Based in Benglore, KA, INDIA
+                Based in Bengaluru, KA, INDIA
               </p>
             </div>
           </div>

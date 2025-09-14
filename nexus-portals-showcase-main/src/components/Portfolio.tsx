@@ -40,8 +40,8 @@ const Portfolio = () => {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
-          <CareerTimeline />  
           <ServicesSection />
+          <CareerTimeline />  
           <ContactSection />
         </main>
         <Footer />
