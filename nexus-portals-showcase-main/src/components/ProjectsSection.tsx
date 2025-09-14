@@ -68,52 +68,59 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "3D Interactive Email Platform",
-      description: "Revolutionary email service with 3D interfaces and immersive user experience for developers.",
-      image: "/api/placeholder/400/250",
-      tech: ["React", "Three.js", "TypeScript", "Node.js"],
-      category: "Web App"
+      title: "Chat AI App",
+      description: "A modern AI-powered chat application built with Stream Chat, Google Gemini, and web search capabilities.",
+      image: "/images/projects/chat-ai-app.png",
+      tech: ["Node.js", "Stream Chat","Google Gemini","React",  "TypeScript", "Vite"],
+      category: "Web App",
+      github: "https://github.com/KhushveerS/ai-chat-app-with-gemini"
     },
     {
       id: 2,
-      title: "Next-Level Gaming UI",
-      description: "Futuristic gaming interface with advanced animations and real-time data visualization.",
-      image: "/api/placeholder/400/250",
-      tech: ["React", "GSAP", "WebGL", "Socket.io"],
-      category: "Gaming"
+      title: "Advanced AI Agent Search",
+      description: "A sophisticated multi-source research agent that combines web search, social media analysis, and AI synthesis. Built with LangGraph and Google Gemini.",
+      image: "/images/projects/ai-agent-search.png",
+      tech: ["LangGraph", "Python", "Google Gemini", "Socket.io"],
+      category: "Search Engine",
+      github: "https://github.com/KhushveerS/Advanced-AI-Agent-Search"
     },
     {
       id: 3,
       title: "3D Portfolio Showcase",
       description: "Personal portfolio website featuring stunning 3D elements and smooth animations.",
-      image: "/api/placeholder/400/250",
+      image: "/images/projects/personal-portfolio.png",
       tech: ["React", "Spline", "GSAP", "Tailwind"],
-      category: "Portfolio"
+      category: "Portfolio",
+      github: "https://github.com/KhushveerS/PersonalPortfolio"
     },
     {
       id: 4,
-      title: "Gaming Website Platform",
-      description: "Modern gaming website with character showcases and interactive elements.",
-      image: "/api/placeholder/400/250",
-      tech: ["Vue.js", "Three.js", "GSAP", "CSS3"],
-      category: "Gaming"
+      title: "Quantitative Trading",
+      description: "Pairs Trading With Python on pair of Stationary and Non-Stationary Stocks",
+      image: "/images/projects/quantitative-trading.png",
+      tech: ["Python", "Numpy", "TimeSeries", "Candlestick Pattern"],
+      category: "Finance",
+      github: "https://github.com/KhushveerS/Pairs-Trading-With-Python"
     },
     {
       id: 5,
-      title: "Animation Learning Hub",
-      description: "Educational platform for learning web animation tools with interactive tutorials.",
-      image: "/api/placeholder/400/250",
-      tech: ["React", "GSAP", "Lottie", "Firebase"],
-      category: "Education"
+      title: "OS PLAYGORUNG",
+      description: "A operational system project to visualize the various concepts of operating system.",
+      image: "/images/projects/os.png",
+      tech: ["Java","OS","Threads","Synchronization"],
+      category: "Operating System",
+      github: "https://github.com/KhushveerS/OS-PLAYGROUND"
     },
     {
       id: 6,
-      title: "Animated Portfolio Tutorial",
-      description: "Step-by-step tutorial series for creating animated portfolio websites.",
-      image: "/api/placeholder/400/250",
-      tech: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-      category: "Tutorial"
+      title: "Advance Coding Platform",
+      description: "A comprehensive platform for practicing Data Structures & Algorithms and Competitive Programming problems from LeetCode and Codeforces..",
+      image: "/images/projects/coding_platform.png",
+      tech: ["React", "LeetCode GraphQL API","Codeforces REST API","Node.js", "OpenAI"],
+      category: "AI",
+      github: "https://github.com/KhushveerS/ADVANCED_AI_CODING_PLATFORM"
     }
+    
   ];
 
   return (
@@ -148,9 +155,27 @@ const ProjectsSection = () => {
               {/* Project Image */}
               <div className="relative overflow-hidden rounded-lg mb-4">
                 <div className="w-full h-48 bg-gradient-to-br from-neon-cyan/20 to-neon-purple/20 rounded-lg flex items-center justify-center">
-                  <span className="text-4xl font-light text-muted-foreground">
-                    {project.id}
-                  </span>
+                  {project.image && project.image !== "/api/placeholder/400/250" ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <div 
+                    className="w-full h-full flex items-center justify-center"
+                    style={{ display: project.image && project.image !== "/api/placeholder/400/250" ? 'none' : 'flex' }}
+                  >
+                    <span className="text-4xl font-light text-muted-foreground">
+                      {project.id}
+                    </span>
+                  </div>
                 </div>
                 
                 {/* Overlay */}
@@ -190,10 +215,13 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* CTA */}
-                <button className="flex items-center gap-2 text-sm text-gradient hover:gap-3 transition-all duration-300">
-                  View Project
-                  <ArrowRight size={14} />
-                </button>
+                <a  href={project.github} target="_blank"  rel="noopener noreferrer" 
+                     className="flex items-center gap-2 text-sm text-gradient hover:gap-3 transition-all duration-300"
+                 >
+                     View Project
+                     <ArrowRight size={14} />
+                 </a>
+
               </div>
             </div>
           ))}

@@ -5,6 +5,7 @@ import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import ProjectsSection from './ProjectsSection';
 import CareerTimeline from './CareerTimeline';
+import ServicesSection from './ServicesSection';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
 const Portfolio = () => {
@@ -39,7 +40,8 @@ const Portfolio = () => {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
-          <CareerTimeline />
+          <CareerTimeline />  
+          <ServicesSection />
           <ContactSection />
         </main>
         <Footer />

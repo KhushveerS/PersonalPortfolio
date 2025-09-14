@@ -120,7 +120,7 @@ const HeroSection = () => {
             ref={subtitleRef}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl font-light leading-relaxed"
           >
-            Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology.
+           Transforming ideas into intelligent solutions with creativity, code, and innovation.
           </p>
 
           <button ref={ctaRef} onClick={scrollToContact} className="hero-button group">

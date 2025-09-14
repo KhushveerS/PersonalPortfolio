@@ -15,30 +15,48 @@ type TimelineItem = {
 
 const items: TimelineItem[] = [
   {
+    period: '2024 - 2025',
+    title: 'College Life',
+    org: 'BMS Institute of Technology & Management',
+    description:
+      'Diving deeper into Computer Science with a focus on Data Structures, Algorithms, Operating Systems, and DBMS. Started exploring hackathons, coding contests, and real-world projects.',
+    skills: ['DSA', 'DBMS', 'OS', 'Teamwork', 'Problem Solving']
+  },
+  {
+    period: '2023 - 2024',
+    title: 'AI Developer',
+    org: 'BMS Institute of Technology & Management',
+    description:
+      'Explored the world of Artificial Intelligence, building hands-on projects in deep learning, generative AI, and natural language processing while strengthening Python skills.',
+    skills: ['AI', 'Python', 'GenAI', 'Keras', 'PyTorch']
+  },
+  {
     period: '2022 - 2023',
-    title: 'Web Developer (Trainee)',
+    title: 'Web Developer',
     org: 'Self Learning',
     description:
-      'Learned HTML, CSS, JavaScript and React. Built beginner to intermediate projects and learned version control with Git.',
-    skills: ['Html', 'Css', 'Javascript', 'React', 'Git']
+      'Learned the foundations of front-end development and built interactive websites and apps using modern frameworks and version control.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
   },
   {
     period: '2021 - 2022',
     title: 'Intermediate Student',
-    org: 'Academic Journey',
+    org: 'City Montessori School',
     description:
-      'Strengthened problem solving and fundamentals while exploring UI design and animations for the web.',
+      'Successfully completed my Intermediate studies with strong results and secured admission into a reputed engineering college.',
     skills: ['UI', 'Animations', 'Problem Solving']
   },
   {
     period: '2020 - 2021',
     title: 'Beginner',
-    org: 'Getting Started',
+    org: 'Citiy Montessori School',
     description:
-      'Discovered a passion for the web and started building small experiments and pages.',
-    skills: ['HTML', 'CSS']
+      'Started programming with Java and built simple projects that laid the foundation for my coding journey.',
+    skills: ['Java']
   }
 ];
+
+  
 
 const CareerTimeline = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

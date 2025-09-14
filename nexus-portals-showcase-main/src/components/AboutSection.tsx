@@ -11,7 +11,7 @@ import {
 } from 'phosphor-react';
 import profileAvatar from '@/assets/profile-avatar.png';
 import AnimatedBackground from './AnimatedBackground';
-import { Leaf } from 'lucide-react';
+import { GitBranch, GitBranchPlusIcon, GitCommit, Leaf } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -109,7 +109,7 @@ const AboutSection = () => {
     { icon: Rocket, name: 'GSAP', color: 'text-green-400', url: 'https://gsap.com/docs/v3/' },
     { icon: Cpu, name: 'Node.js', color: 'text-green-500', url: 'https://nodejs.org/docs/latest/api/' },
     { icon: Globe, name: 'Vite', color: 'text-purple-400', url: 'https://vite.dev/' },
-    { icon: Globe, name: 'Git', color: 'text-rose-400', url: 'https://git-scm.com/doc' }
+    { icon: GitBranch, name: 'Git', color: 'text-rose-400', url: 'https://git-scm.com/doc' }
   ];
 
   return (
@@ -155,15 +155,16 @@ const AboutSection = () => {
               
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  I'm a passionate web developer who specializes in creating immersive digital experiences that push the boundaries of what's possible on the web.
+                     I'm an AI Engineer and Web Developer passionate about building intelligent applications that combine automation, data-driven insights, and seamless user experiences.
                 </p>
                 <p>
-                  With expertise in modern frameworks like React and cutting-edge animation libraries like GSAP, I bring ideas to life through code, design, and innovation.
-                </p>
+                  With expertise in frameworks like React, deep learning libraries such as TensorFlow and PyTorch, and modern tools like LangChain and GSAP, I create solutions that bridge the gap between AI and interactive web technologies.
+                 </p>
                 <p>
-                  My goal is to craft websites that not only look stunning but also provide seamless user experiences across all devices and platforms.
+                   My mission is to design and engineer systems that are not only visually engaging but also scalable, efficient, and powered by the latest advancements in artificial intelligence.
                 </p>
               </div>
+
             </div>
 
             {/* Skills Grid */}
