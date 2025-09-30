@@ -14,22 +14,23 @@ type TimelineItem = {
 };
 
 const items: TimelineItem[] = [
-  {
+   {
     period: '2024 - 2025',
-    title: 'College Life',
-    org: 'BMS Institute of Technology & Management',
-    description:
-      'Diving deeper into Computer Science with a focus on Data Structures, Algorithms, Operating Systems, and DBMS. Started exploring hackathons, coding contests, and real-world projects.',
-    skills: ['DSA', 'DBMS', 'OS', 'Teamwork', 'Problem Solving']
-  },
-  {
-    period: '2023 - 2024',
     title: 'AI Developer',
     org: 'BMS Institute of Technology & Management',
     description:
       'Explored the world of Artificial Intelligence, building hands-on projects in deep learning, generative AI, and natural language processing while strengthening Python skills.',
     skills: ['AI', 'Python', 'GenAI', 'Keras', 'PyTorch']
   },
+  {
+    period: '2023 - 2024',
+    title: 'College Life',
+    org: 'BMS Institute of Technology & Management',
+    description:
+      'Diving deeper into Computer Science with a focus on Data Structures, Algorithms, Operating Systems, and DBMS. Started exploring hackathons, coding contests, and real-world projects.',
+    skills: ['DSA', 'DBMS', 'OS', 'Teamwork', 'Problem Solving']
+  },
+ 
   {
     period: '2022 - 2023',
     title: 'Web Developer',

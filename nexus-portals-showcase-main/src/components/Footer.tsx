@@ -123,7 +123,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-glass-border/30 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
+            <div className="flex items-center gap-2 mb-4 md:mb-0 text-white hover:text-neon-pink transition-colors duration-300">
               <Copyright size={16} />
               <span>2025 Khushveer Singh. All rights reserved.</span>
             </div>

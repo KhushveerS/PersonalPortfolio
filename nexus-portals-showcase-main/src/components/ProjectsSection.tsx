@@ -68,15 +68,6 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Chat AI App",
-      description: "A modern AI-powered chat application built with Stream Chat, Google Gemini, and web search capabilities.",
-      image: "/images/projects/chat-ai-app.png",
-      tech: ["Node.js", "Stream Chat","Google Gemini","React",  "TypeScript", "Vite"],
-      category: "Web App",
-      github: "https://github.com/KhushveerS/ai-chat-app-with-gemini"
-    },
-    {
-      id: 2,
       title: "Advanced AI Agent Search",
       description: "A sophisticated multi-source research agent that combines web search, social media analysis, and AI synthesis. Built with LangGraph and Google Gemini.",
       image: "/images/projects/ai-agent-search.png",
@@ -85,16 +76,16 @@ const ProjectsSection = () => {
       github: "https://github.com/KhushveerS/Advanced-AI-Agent-Search"
     },
     {
-      id: 3,
-      title: "3D Portfolio Showcase",
-      description: "Personal portfolio website featuring stunning 3D elements and smooth animations.",
-      image: "/images/projects/personal-portfolio.png",
-      tech: ["React", "Spline", "GSAP", "Tailwind"],
-      category: "Portfolio",
-      github: "https://github.com/KhushveerS/PersonalPortfolio"
+      id: 2,
+      title: "AI-FINANCAL-ASSISTANT",
+      description: " The assistant provides real-time data insights across stocks, crypto, and forex markets, combined with AI-driven analytics for financial health, risk assessment, and market sentiment.",
+      image: "/images/projects/ai-finacal-assistant.png",
+      tech: ["React", "Weights", "Alpha Vantage", "TypeScript"],
+      category: "AI Assistant",
+      github: "https://github.com/KhushveerS/AI-FINANCAL-ASSISTANT"
     },
     {
-      id: 4,
+      id: 3,
       title: "Quantitative Trading",
       description: "Pairs Trading With Python on pair of Stationary and Non-Stationary Stocks",
       image: "/images/projects/quantitative-trading.png",
@@ -103,7 +94,36 @@ const ProjectsSection = () => {
       github: "https://github.com/KhushveerS/Pairs-Trading-With-Python"
     },
     {
+      id: 4,
+      title: "Advance Coding Platform",
+      description: "A comprehensive platform for practicing Data Structures & Algorithms and Competitive Programming problems from LeetCode and Codeforces..",
+      image: "/images/projects/coding_platform.png",
+      tech: ["React", "LeetCode GraphQL API","Codeforces REST API","Node.js", "OpenAI"],
+      category: "AI",
+      github: "https://github.com/KhushveerS/ADVANCED_AI_CODING_PLATFORM"
+    },
+     {
       id: 5,
+      title: "Vexel Quiz App",
+      description: "An interactive quiz platform enhanced with AI capabilities, designed to provide personalized, intelligent, and engaging learning experiences.",
+      image: "/images/projects/Quiz-app.png",
+      tech: ["React", "Gemini API","NodeJs","TypeScript","Vite"],
+      category: "Web App + AI",
+      github: "https://github.com/KhushveerS/QUIZ_PLATFORM"
+    },
+    
+    {
+      id: 6,
+      title: "Global Watch",
+      description: "A lightweight, offline-capable climate and weather web app with unique insights:Commute Comfort Score,AC Efficiency Advisor,UV Index,Time slider",
+      image: "/images/projects/climate-app2.png",
+      tech: ["JavaScript", "Restful API","CSS","HTML"],
+      category: "Web App",
+      github: "https://github.com/KhushveerS/climate-app"
+    },
+   
+    {
+      id: 7,
       title: "OS PLAYGORUNG",
       description: "A operational system project to visualize the various concepts of operating system.",
       image: "/images/projects/os.png",
@@ -112,13 +132,13 @@ const ProjectsSection = () => {
       github: "https://github.com/KhushveerS/OS-PLAYGROUND"
     },
     {
-      id: 6,
-      title: "Advance Coding Platform",
-      description: "A comprehensive platform for practicing Data Structures & Algorithms and Competitive Programming problems from LeetCode and Codeforces..",
-      image: "/images/projects/coding_platform.png",
-      tech: ["React", "LeetCode GraphQL API","Codeforces REST API","Node.js", "OpenAI"],
-      category: "AI",
-      github: "https://github.com/KhushveerS/ADVANCED_AI_CODING_PLATFORM"
+      id: 8,
+      title: "Chat AI App",
+      description: "A modern AI-powered chat application built with Stream Chat, Google Gemini, and web search capabilities.",
+      image: "/images/projects/chat-ai-app.png",
+      tech: ["Node.js", "Stream Chat","Google Gemini","React",  "TypeScript", "Vite"],
+      category: "Web App",
+      github: "https://github.com/KhushveerS/ai-chat-app-with-gemini"
     }
     
   ];
